@@ -5,11 +5,77 @@
 <title>Gicker Portfolio </title>
 
 <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
 <style>
+        body {  
+        background: #FCFEF5;   
+        font-family: 'Sintony', sans-serif;
+    }
+        header { 
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: #a0c9a7;
+            padding: 15px 0 20px;
+        }
+    h1 { 
+        font-family: 'Ubuntu', sans-serif;
+        color: #005872; 
+        width: 80%;
+        margin: 0 auto;
+        color: whitesmoke;
+    }
+    h2 { 
+        font-family: 'Ubuntu', sans-serif;
+        color: #005872;
+        width: 80%;
+        margin: 0 auto;
+        color: whitesmoke;
+    }
     
-/* CSS style rules go here! */   
-
+     h3 {
+        font-family: 'Ubuntu', sans-serif;
+        color: #003d71
+    }
+    p { 
+        font-size: .9em; 
+        color: #375671; 
+    }
+    ul {
+        list-style-type: none; 
+        font-size: .9em; 
+        color: #375671; 
+        line-height: 1.6em;
+    }
+    a, a:visited {   
+        color: #003d71;
+    }
+    
+    .project {
+    width: 80%;
+    min-width: 800px;
+    height: 100%;
+    margin: 35px auto;
+    }
+    .project:after{
+        content: "";
+        display: table;
+        clear: both; 
+    }
+    .project-image {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 2px solid #dddddd;
+    }
+    
+  
 </style>
 </head>
 
@@ -19,10 +85,10 @@
         <h2>Purvayor of digital maps</h2>
      </header>
 
-    <<section>
-    <a href="maps/breweries.pdf"><img src="Images/breweries.png" alt="Breweries In North America"/></a>
+    <section class="project">
+    <a href="maps/breweries.pdf"><img src="Images/breweries.png" alt="Breweries In North America" class="project-image"/></a>
     <h3>Breweries of north america</h3>
-    <p>This map illustrates the Breweries of North America using a hexbin technique.</p>
+    <p>This map illustrates the  density of breweries in North America using a hexbin technique.</p>
     <p>Each hexigon has an inner diameter of 50km.</p>
     <ul>
         <li>See the map: <a href="maps/breweries.pdf">Breweries of North America</a></li>
@@ -31,25 +97,36 @@
     </ul>
 </section>
 
-    <section>
-        <a target = '_blank' href="https://ethangicker.cartodb.com/viz/4cf65e8c-9adc-11e5-bd92-0e3ff518bd15/public_map"><img        src="images/greenHouse.png" alt="Green House Gas Emissions By County Population" /></a>
+    <section class="project">
+        <a target = '_blank' href="https://ethangicker.cartodb.com/viz/4cf65e8c-9adc-11e5-bd92-0e3ff518bd15/public_map"><img        src="images/greenHouse.png" alt="Green House Gas Emissions By County Population" class="project-image" /></a>
     <h3><a target = '_blank' href="https://ethangicker.cartodb.com/viz/4cf65e8c-9adc-11e5-bd92-0e3ff518bd15/public_map">Green House             Gas Emissions By County Population</a></h3>
-    <p>The map was built using CartoDB and Carto Css</p>
+    <p>This map was built using CartoDB and Carto Css</p>
     <ul>
         <li>See the map: <a target = '_blank'  href="https://ethangicker.cartodb.com/viz/4cf65e8c-9adc-11e5-bd92-0e3ff518bd15/public_map">Green House Gas Emissions By County Population</a></li>
         <li>Data Source: <a target = '_blank'  href="https://developer.epa.gov/category/data/">EPA Emmision Data base </a></li>
     </ul>
 </section>  
     
-    <section>
-        <a target = '_blank' href="https://ethangicker.cartodb.com/viz/1818af30-a351-11e5-a0ab-0e3ff518bd15/public_map"><img        src="images/SFCanopy.png" alt="San Francisco canopy cover and assult rates" /></a>
+    <section class="project">
+        <a target = '_blank' href="https://ethangicker.cartodb.com/viz/1818af30-a351-11e5-a0ab-0e3ff518bd15/public_map"><img        src="images/SFCanopy.png" alt="San Francisco canopy cover and assult rates" class="project-image"/></a>
     <h3><a target = '_blank' href="https://ethangicker.cartodb.com/viz/1818af30-a351-11e5-a0ab-0e3ff518bd15/public_map">San Francisco canopy cover and assult rates</a></h3>
-    <p>The map was built using CartoDB and Carto Css</p>
+    <p>This map was built using the CartoDB platform and Carto Css</p>
     <ul>
         <li>See the map: <a target = '_blank'  href="https://ethangicker.cartodb.com/viz/1818af30-a351-11e5-a0ab-0e3ff518bd15/public_map">San Francisco canopy cover and assult rates</a></li>
         <li>Data Source: <a target = '_blank'  href="http://datasf.org/">Open SF </a></li>
     </ul>
-</section>   
+</section>
+    
+    <section class="project">
+   <a target = '_blank' href="#"><img src="images/powerSource.png" alt="Poer" class="project-image"/></a>
+    <h3><a target = '_blank' href="#">Proportional electricity producion</a></h3>
+    <p>This map was built with custom JavaScript code drawing upon the Leaflet JavaScript Library.</p>
+    <ul>
+        <li>See the map: <a target = '_blank'  href="#">Hello Kitty Proportional Symbol Map</a></li>
+        <li>Data Source: <a target = '_blank'  href="https://www.eia.gov/electricity/data/detail-data.html">U.S. electricity production</a></li>
+    </ul>
+</section>
+
     
 </body>
 </html>
